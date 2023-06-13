@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Medidor de Amor 2.0</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+
+<body>
+    <div class="card-container">
+        <div class="card">
+            <div class="face front" onclick="flipCard()">
+                <h1>Teste seu nível (%) de amor</h1>
+                <h1>do seu relacionamento ^__^</h1>
+                <button>Começar</button>
+            </div>
+            <div class="face back">
+                <div id="questoes">
+                    <h3>Responda as seguintes perguntas para medir seu nível de amor:</h3>
+                    <form action="">
+                        <label for="questao1">Pergunta 1: Eu me sinto amado(a) quando meu(a) parceiro(a)...</label>
+                        <input type="text" id="questao1" required>
+
+                        <label for="questao2">Pergunta 2: Eu sinto que meu(a) parceiro(a) me ama quando...</label>
+                        <input type="text" id="questao2" required>
+
+                    </form>
+                </div>
+                <button onclick="calcularAmor()">Calcular</button>
+                <div id="resultado" style="display: none;">
+                    <h3>Seu nível de amor é:</h3>
+                    <p id="nivelamor"></p>
+                </div>
+                <button onclick="flipCard()">Voltar</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
